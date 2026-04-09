@@ -73,11 +73,10 @@ function HomeMenuPage() {
   return (
     <section className="page-wrap p5-enter">
       <div className="hero-copy">
-        <p className="hero-tag">Persona 5 Inspired Portfolio</p>
+        <p className="hero-tag">Portfolio</p>
         <h1 className="hero-title">Choose Your Route</h1>
         <p className="hero-subtitle">
-          Calling card mode is active. Hover the menu options to change the card and keep
-          each section easy to edit later. On selection, the card gets stamped before moving.
+          Welcome to my portfolio. Feel free to explore around.
         </p>
       </div>
 

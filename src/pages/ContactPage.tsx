@@ -1,16 +1,16 @@
 const contactPlaceholder = [
-  { label: 'Email', value: 'your-email@example.com', href: 'mailto:your-email@example.com' },
-  { label: 'GitHub', value: 'https://github.com/your-profile', href: 'https://github.com/' },
-  { label: 'LinkedIn', value: 'https://linkedin.com/in/your-profile', href: 'https://linkedin.com/' },
+  { label: 'Email', value: 'aungkg2468@gmail.com', href: 'mailto:aungkg2468@gmail.com' },
+  { label: 'GitHub', value: 'github.com/d3nisacookies', href: 'https://github.com/d3nisacookies' },
+  { label: 'LinkedIn', value: 'linkedin.com/in/aung-kaung-d3nisacookies', href: 'https://www.linkedin.com/in/aung-kaung-d3nisacookies/' },
 ]
 
 function ContactPage() {
   return (
     <section className="content-page p5-enter">
       <p className="section-tag">Contact</p>
-      <h2 className="section-title">Call Card</h2>
+      <h2 className="section-title">Calling Card</h2>
       <p className="section-text">
-        Replace these placeholders with your real links so recruiters and collaborators can reach you quickly.
+        here are my credentials.
       </p>
 
       <div className="placeholder-grid">

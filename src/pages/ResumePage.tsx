@@ -1,8 +1,4 @@
-const resumePlaceholder = {
-  education: 'Replace with your degree, university, and graduation timeline.',
-  experience: 'Replace with internship, freelance, or campus role details.',
-  skills: ['Python', 'Java', 'React', 'Machine Learning', 'Data Engineering'],
-}
+const skills = ['Python', 'Java', 'React', 'Machine Learning', 'Data Engineering', 'C/C++']
 
 function ResumePage() {
   return (
@@ -10,28 +6,32 @@ function ResumePage() {
       <p className="section-tag">Resume</p>
       <h2 className="section-title">Career Snapshot</h2>
 
-      <div className="placeholder-grid">
-        <article className="placeholder-card">
-          <h3 className="placeholder-title">Education</h3>
-          <p className="placeholder-body">{resumePlaceholder.education}</p>
-        </article>
+      <article className="placeholder-card" style={{ width: '100%' }}>
+        <h3 className="placeholder-title">Skill Highlights</h3>
+        <div className="skill-chip-list">
+          {skills.map((skill) => (
+            <span key={skill} className="skill-chip">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </article>
 
-        <article className="placeholder-card">
-          <h3 className="placeholder-title">Experience</h3>
-          <p className="placeholder-body">{resumePlaceholder.experience}</p>
-        </article>
+      <a
+        href="/Aung_Kaung_CV.pdf"
+        download
+        className="cv-download-btn"
+      >
+        &#8595; Download Full CV
+      </a>
 
-        <article className="placeholder-card">
-          <h3 className="placeholder-title">Skill Highlights</h3>
-          <div className="skill-chip-list">
-            {resumePlaceholder.skills.map((skill) => (
-              <span key={skill} className="skill-chip">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </article>
-      </div>
+      <iframe
+        src="/Aung_Kaung_CV.pdf"
+        title="Aung Kaung CV"
+        width="100%"
+        height="800px"
+        style={{ border: 'none', borderRadius: '8px' }}
+      />
     </section>
   )
 }
